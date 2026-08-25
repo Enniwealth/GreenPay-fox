@@ -26,7 +26,9 @@ mod property {
         CancelAfterExpiry,
     }
 
-    fn setup_job(amount: i128) -> (
+    fn setup_job(
+        amount: i128,
+    ) -> (
         Env,
         EscrowContractClient<'static>,
         Address,
@@ -68,7 +70,16 @@ mod property {
             &expiry,
         );
 
-        (env, client, admin, escrow_client, freelancer, token, job_id, amount)
+        (
+            env,
+            client,
+            admin,
+            escrow_client,
+            freelancer,
+            token,
+            job_id,
+            amount,
+        )
     }
 
     fn apply_op(
@@ -259,7 +270,8 @@ mod property {
     #[test]
     fn regression_partial_release_cannot_exceed_remaining() {
         let amount = 10 * STROOP;
-        let (_env, client, admin, escrow_client, _freelancer, _token, job_id, _) = setup_job(amount);
+        let (_env, client, admin, escrow_client, _freelancer, _token, job_id, _) =
+            setup_job(amount);
 
         client.release_partial(&escrow_client, &job_id, &(7 * STROOP));
         let over = client.try_release_partial(&escrow_client, &job_id, &(4 * STROOP));

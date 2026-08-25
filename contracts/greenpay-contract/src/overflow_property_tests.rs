@@ -7,8 +7,8 @@ mod overflow {
     extern crate std;
 
     use crate::{
-        GreenPayContract, GreenPayContractClient, MAX_CO2_PER_XLM,
-        MAX_REALISTIC_DONATION_STROOPS, STROOP,
+        GreenPayContract, GreenPayContractClient, MAX_CO2_PER_XLM, MAX_REALISTIC_DONATION_STROOPS,
+        STROOP,
     };
     use proptest::prelude::*;
     use soroban_sdk::testutils::Address as _;

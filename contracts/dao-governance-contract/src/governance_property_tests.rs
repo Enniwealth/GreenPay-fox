@@ -8,9 +8,7 @@ mod governance {
 
     use std::vec::Vec;
 
-    use crate::{
-        DaoGovernanceContract, DaoGovernanceContractClient, ProposalStage,
-    };
+    use crate::{DaoGovernanceContract, DaoGovernanceContractClient, ProposalStage};
     use proptest::prelude::*;
     use soroban_sdk::testutils::{Address as _, Ledger as _};
     use soroban_sdk::token::StellarAssetClient;
@@ -59,9 +57,7 @@ mod governance {
 
         let admin = Address::generate(&env);
         let gp_admin = Address::generate(&env);
-        let gp_token = env
-            .register_stellar_asset_contract_v2(gp_admin)
-            .address();
+        let gp_token = env.register_stellar_asset_contract_v2(gp_admin).address();
         env.as_contract(&gp_token, || {
             env.storage().instance().extend_ttl(1_000_000, 1_000_000);
         });
@@ -87,14 +83,8 @@ mod governance {
         (fixture, voter, token_client)
     }
 
-    fn lock_all(
-        fixture: &GovFixture,
-        voter: &Address,
-        amount: i128,
-    ) {
-        fixture
-            .client
-            .lock_tokens(voter, &amount, &MIN_LOCK);
+    fn lock_all(fixture: &GovFixture, voter: &Address, amount: i128) {
+        fixture.client.lock_tokens(voter, &amount, &MIN_LOCK);
     }
 
     fn create_proposal(fixture: &GovFixture, proposer: &Address) -> u64 {
@@ -240,9 +230,7 @@ mod governance {
         let (fixture, voter, _token) = setup_governance(100 * STROOP);
         lock_all(&fixture, &voter, 100 * STROOP);
 
-        let ids: Vec<u64> = (0..5)
-            .map(|_| create_proposal(&fixture, &voter))
-            .collect();
+        let ids: Vec<u64> = (0..5).map(|_| create_proposal(&fixture, &voter)).collect();
 
         for (i, &pid) in ids.iter().enumerate() {
             assert_eq!(pid, (i + 1) as u64);

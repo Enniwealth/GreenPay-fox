@@ -16,7 +16,9 @@ mod property {
     const MIN_LOCK: u32 = 120_960; // 7 days
     const STROOP: i128 = 10_000_000;
 
-    fn setup_with_balance(voter_balance: i128) -> (
+    fn setup_with_balance(
+        voter_balance: i128,
+    ) -> (
         Env,
         DaoGovernanceContractClient<'static>,
         Address,
@@ -35,9 +37,7 @@ mod property {
 
         let admin = Address::generate(&env);
         let gp_admin = Address::generate(&env);
-        let gp_token = env
-            .register_stellar_asset_contract_v2(gp_admin)
-            .address();
+        let gp_token = env.register_stellar_asset_contract_v2(gp_admin).address();
         env.as_contract(&gp_token, || {
             env.storage().instance().extend_ttl(1_000_000, 1_000_000);
         });

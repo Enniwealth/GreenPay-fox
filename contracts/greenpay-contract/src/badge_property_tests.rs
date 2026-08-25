@@ -8,9 +8,7 @@ mod badge {
 
     use std::vec::Vec;
 
-    use crate::{
-        BadgeTier, GreenPayContract, GreenPayContractClient, STROOP,
-    };
+    use crate::{BadgeTier, GreenPayContract, GreenPayContractClient, STROOP};
     use proptest::prelude::*;
     use soroban_sdk::testutils::Address as _;
     use soroban_sdk::token::StellarAssetClient;
@@ -191,7 +189,14 @@ mod badge {
         let (client, _admin, token, token_client, project_id) = setup_project(&env);
         let donor = Address::generate(&env);
 
-        donate(&client, &token, &token_client, &donor, &project_id, 10 * STROOP);
+        donate(
+            &client,
+            &token,
+            &token_client,
+            &donor,
+            &project_id,
+            10 * STROOP,
+        );
         assert_eq!(client.get_badge(&donor), BadgeTier::Seedling);
         assert!(client.has_nft(&donor, &BadgeTier::Seedling));
     }
@@ -202,7 +207,14 @@ mod badge {
         let (client, _admin, token, token_client, project_id) = setup_project(&env);
         let donor = Address::generate(&env);
 
-        donate(&client, &token, &token_client, &donor, &project_id, 2000 * STROOP);
+        donate(
+            &client,
+            &token,
+            &token_client,
+            &donor,
+            &project_id,
+            2000 * STROOP,
+        );
         assert_eq!(client.get_badge(&donor), BadgeTier::EarthGuardian);
         assert!(badge_rank(client.get_badge(&donor)) >= badge_rank(BadgeTier::Forest));
     }

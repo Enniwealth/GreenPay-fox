@@ -1,8 +1,8 @@
 #![no_std]
 #[cfg(all(test, feature = "testutils"))]
-mod property_tests;
-#[cfg(all(test, feature = "testutils"))]
 mod governance_property_tests;
+#[cfg(all(test, feature = "testutils"))]
+mod property_tests;
 
 use soroban_sdk::{
     contract, contractimpl, contracttype, token, vec, Address, Bytes, BytesN, Env, IntoVal, String,

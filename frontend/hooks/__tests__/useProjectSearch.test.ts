@@ -14,6 +14,14 @@ jest.mock("@/lib/api", () => ({
 const mockFetchProjects = fetchProjects as jest.MockedFunction<typeof fetchProjects>;
 const mockUseRouter = useRouter as jest.MockedFunction<typeof useRouter>;
 
+const emptyFacets = {
+  category: {},
+  status: {},
+  verified: {},
+  location: {},
+  fundingProgress: {},
+};
+
 describe("useProjectSearch", () => {
   const push = jest.fn();
 
@@ -27,7 +35,7 @@ describe("useProjectSearch", () => {
 
     mockFetchProjects.mockResolvedValue({
       projects: [],
-      meta: { total: 0, search: null, latencyMs: 10, facets: {} },
+      meta: { total: 0, search: null, latencyMs: 10, facets: emptyFacets },
     });
   });
 
