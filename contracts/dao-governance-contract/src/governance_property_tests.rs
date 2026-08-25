@@ -39,8 +39,6 @@ mod governance {
     struct GovFixture {
         env: Env,
         client: DaoGovernanceContractClient<'static>,
-        admin: Address,
-        gp_token: Address,
         target: Address,
         noop_fn: Symbol,
     }
@@ -75,8 +73,6 @@ mod governance {
         let fixture = GovFixture {
             env,
             client,
-            admin,
-            gp_token,
             target,
             noop_fn,
         };

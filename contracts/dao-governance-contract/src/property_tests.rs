@@ -126,7 +126,6 @@ mod property {
                             env.ledger()
                                 .set_sequence_number(env.ledger().sequence() + MIN_LOCK + 1);
                             client.withdraw(&voter);
-                            expected_locked = 0;
                         }
                         let lock_amt = amt.min(balance);
                         client.lock_tokens(&voter, &lock_amt, &MIN_LOCK);

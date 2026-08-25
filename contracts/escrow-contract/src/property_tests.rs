@@ -165,7 +165,7 @@ mod property {
             partial_count in 1u32..=6u32,
             chunk in STROOP..=(5 * STROOP),
         ) {
-            let (_env, client, admin, escrow_client, _freelancer, _token, job_id, amount) =
+            let (_env, client, _admin, escrow_client, _freelancer, _token, job_id, amount) =
                 setup_job(original);
 
             let mut released: i128 = 0;
@@ -270,7 +270,7 @@ mod property {
     #[test]
     fn regression_partial_release_cannot_exceed_remaining() {
         let amount = 10 * STROOP;
-        let (_env, client, admin, escrow_client, _freelancer, _token, job_id, _) =
+        let (_env, client, _admin, escrow_client, _freelancer, _token, job_id, _) =
             setup_job(amount);
 
         client.release_partial(&escrow_client, &job_id, &(7 * STROOP));
