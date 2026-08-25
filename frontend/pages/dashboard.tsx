@@ -44,15 +44,15 @@ export default function Dashboard({ publicKey, onConnect }: DashboardProps) {
       getXLMBalance(publicKey).catch(() => { setIsUnfunded(true); return null; }),
       fetchProjects(),
     ])
-      .then(([p, d, b, allProjects]) => { 
+      .then(([p, d, b, projectResponse]) => { 
         setProfile(p); 
         setDonations(d); 
         if (b !== null) {
           setBalance(b);
           setIsUnfunded(false);
         }
-        setAllProjects(allProjects);
-        setSavedProjects(allProjects.filter(proj => wishlist.includes(proj.id)));
+        setAllProjects(projectResponse.projects);
+        setSavedProjects(projectResponse.projects.filter(proj => wishlist.includes(proj.id)));
         
         // Fetch pending rating
         return fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/v1/ratings/pending?donorAddress=${publicKey}`);

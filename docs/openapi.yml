@@ -287,6 +287,68 @@ components:
           type: string
           format: date-time
 
+    ProjectSearchFacets:
+      type: object
+      description: Facet counts for the current filtered result set.
+      properties:
+        status:
+          type: object
+          additionalProperties:
+            type: integer
+        category:
+          type: object
+          additionalProperties:
+            type: integer
+        verified:
+          type: object
+          properties:
+            "true":
+              type: integer
+            "false":
+              type: integer
+        location:
+          type: object
+          additionalProperties:
+            type: integer
+        fundingProgress:
+          type: object
+          additionalProperties:
+            type: integer
+          description: |
+            Counts keyed by bucket — under25, 25to50, 50to75, over75, funded.
+
+    ProjectSearchMeta:
+      type: object
+      description: Search metadata returned alongside project listings.
+      properties:
+        total:
+          type: integer
+          description: Total projects matching filters (before limit).
+        search:
+          type: string
+          nullable: true
+          description: Sanitized search term applied to the query.
+        latencyMs:
+          type: number
+          format: float
+          description: Server-side query latency in milliseconds.
+        latencyBudgetMs:
+          type: number
+          format: float
+          description: Target p95 latency budget (default 150ms).
+        facets:
+          $ref: '#/components/schemas/ProjectSearchFacets'
+        ranking:
+          type: object
+          nullable: true
+          additionalProperties:
+            type: number
+          description: Optional per-field ranking weight snapshot for debugging.
+
+    ProjectListMeta:
+      allOf:
+        - $ref: '#/components/schemas/ProjectSearchMeta'
+
     Job:
       type: object
       properties:
@@ -441,9 +503,14 @@ paths:
             type: integer
             default: 50
             maximum: 100
+        - name: offset
+          in: query
+          schema:
+            type: integer
+            default: 0
       responses:
         '200':
-          description: List of projects
+          description: List of projects with optional search metadata
           content:
             application/json:
               schema:
@@ -455,6 +522,8 @@ paths:
                         type: array
                         items:
                           $ref: '#/components/schemas/Project'
+                      meta:
+                        $ref: '#/components/schemas/ProjectListMeta'
 
   /api/projects/featured:
     get:

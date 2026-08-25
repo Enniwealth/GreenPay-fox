@@ -256,6 +256,28 @@ export async function parseApiFetchResponse<T>(response: Response): Promise<T> {
   throw new ApiClientError(body.error, response.status, response);
 }
 
+export interface ProjectSearchFacets {
+  category: Record<string, number>;
+  status: Record<string, number>;
+  verified: Record<string, number>;
+  location: Record<string, number>;
+  fundingProgress: Record<string, number>;
+}
+
+export interface ProjectSearchMeta {
+  total: number;
+  search: string | null;
+  latencyMs: number;
+  latencyBudgetMs?: number;
+  facets: ProjectSearchFacets;
+  ranking?: Record<string, number> | null;
+}
+
+export interface ProjectListResponse {
+  projects: ClimateProject[];
+  meta?: ProjectSearchMeta;
+}
+
 // ── Projects ──────────────────────────────────────────────────────────────────
 export async function fetchProjects(params?: {
   category?: string;
@@ -263,12 +285,15 @@ export async function fetchProjects(params?: {
   verified?: boolean;
   search?: string;
   limit?: number;
-}) {
-  const { data } = await api.get<ClimateProject[]>(
+}): Promise<ProjectListResponse> {
+  const response = await api.get<ClimateProject[]>(
     "/api/projects",
     { params },
   );
-  return data;
+  return {
+    projects: response.data,
+    meta: responseMeta(response) as ProjectSearchMeta | undefined,
+  };
 }
 
 export async function fetchProject(id: string) {

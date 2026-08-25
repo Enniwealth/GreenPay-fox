@@ -11,6 +11,8 @@ const { adminRequired } = require("../middleware/auth");
 const { createLayeredRateLimiter } = require("../middleware/rateLimiter");
 const { logAdminAction } = require("../services/audit");
 const { mapProjectRow, mapProjectMilestoneRow } = require("../services/store");
+const { searchProjects } = require("../services/projectSearch");
+const { loadRankingConfig, SEARCH_LATENCY_BUDGET_MS } = require("../config/searchRanking");
 const { getOnChainProject, CONTRACT_ID, server, NETWORK_PASSPHRASE } = require("../services/stellar");
 const { enqueueAISummary } = require("../services/summaryQueue");
 const { Contract, TransactionBuilder } = require("@stellar/stellar-sdk");
@@ -158,43 +160,15 @@ router.get("/featured", async (req, res, next) => {
 
 router.get("/", async (req, res, next) => {
   try {
-    const { category, status, verified, search, limit = 50 } = req.query;
-    const where = [];
-    const values = [];
+    const ranking = loadRankingConfig();
+    const { rows, meta } = await searchProjects(pool, req.query, ranking);
 
-    if (status && VALID_STATUSES.includes(status)) {
-      values.push(status);
-      where.push(`status = $${values.length}`);
-    }
-    if (category && VALID_CATEGORIES.includes(category)) {
-      values.push(category);
-      where.push(`category = $${values.length}`);
-    }
-    if (verified === "true") {
-      where.push("verified = true");
-    }
-    if (search && typeof search === "string") {
-      values.push(`%${search}%`);
-      where.push(`(
-        name ILIKE $${values.length}
-        OR description ILIKE $${values.length}
-        OR location ILIKE $${values.length}
-        OR EXISTS (
-          SELECT 1
-          FROM unnest(tags) AS tag
-          WHERE tag ILIKE $${values.length}
-        )
-      )`);
-    }
+    res.apiMeta({
+      ...meta,
+      latencyBudgetMs: SEARCH_LATENCY_BUDGET_MS,
+    });
 
-    values.push(Math.min(Number.parseInt(limit, 10) || 50, 100));
-
-    const whereClause = where.length ? `WHERE ${where.join(" AND ")} ` : "";
-    const query = `SELECT * FROM projects ${whereClause}ORDER BY created_at DESC LIMIT $${values.length}`;
-
-    const result = await pool.query(query, values);
-
-    res.json(result.rows.map(row => ({ ...mapProjectRow(row), serverNow: Date.now() })));
+    res.json(rows.map(row => ({ ...mapProjectRow(row), serverNow: Date.now() })));
   } catch (e) {
     next(e);
   }

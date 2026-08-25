@@ -106,7 +106,7 @@ export default function Home({ publicKey, onConnect }: HomeProps) {
       .catch(() => null);
 
     fetchProjects({ limit: 100 })
-      .then((projects) => {
+      .then(({ projects }) => {
         projectNamesRef.current = new Map(
           projects.map((project) => [project.id, project.name]),
         );

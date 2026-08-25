@@ -1,6 +1,10 @@
 #![no_std]
 #[cfg(all(test, feature = "testutils"))]
 mod fuzz_tests;
+#[cfg(all(test, feature = "testutils"))]
+mod badge_property_tests;
+#[cfg(all(test, feature = "testutils"))]
+mod overflow_property_tests;
 
 /**
  * contracts/greenpay-contract/src/lib.rs

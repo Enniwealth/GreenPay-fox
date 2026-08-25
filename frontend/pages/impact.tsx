@@ -34,7 +34,7 @@ export default function ImpactPage() {
         setStats(impactStats);
         setLeaderboard(topDonors);
         setSorobanStats(sorobanData);
-        setProjectCount(allProjects.length);
+        setProjectCount(allProjects.projects.length);
       } catch (err) {
         console.error("Failed to load impact data:", err);
       } finally {
