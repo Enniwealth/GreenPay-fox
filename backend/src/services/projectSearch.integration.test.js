@@ -265,20 +265,24 @@ describe("project search integration", () => {
         ["bulk"],
       ]);
     }
-    for (const row of bulk) {
-      // eslint-disable-next-line no-await-in-loop
-      await pool.query(
-        `INSERT INTO projects (
+    try {
+      for (const row of bulk) {
+        // eslint-disable-next-line no-await-in-loop
+        await pool.query(
+          `INSERT INTO projects (
           id, name, description, category, location, wallet_address,
           goal_xlm, raised_xlm, donor_count, status, verified, tags
         ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12)
         ON CONFLICT (id) DO NOTHING`,
-        row,
-      );
-    }
+          row,
+        );
+      }
 
-    const { meta } = await searchProjects(pool, { search: "conservation", limit: 20 }, DEFAULT_RANKING);
-    expect(meta.latencyMs).toBeLessThan(SEARCH_LATENCY_BUDGET_MS);
+      const { meta } = await searchProjects(pool, { search: "conservation", limit: 20 }, DEFAULT_RANKING);
+      expect(meta.latencyMs).toBeLessThan(SEARCH_LATENCY_BUDGET_MS);
+    } finally {
+      await pool.query(`DELETE FROM projects WHERE tags @> ARRAY['bulk']::text[]`);
+    }
   });
 
   maybeTest("evaluation harness scores labelled queries against live search", async () => {
