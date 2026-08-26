@@ -61,7 +61,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 911167877
+                    "lo": 959324953
                   }
                 }
               ]
@@ -95,7 +95,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 911167877
+                    "lo": 959324953
                   }
                 },
                 {
@@ -120,7 +120,7 @@
                     {
                       "i128": {
                         "hi": 0,
-                        "lo": 911167877
+                        "lo": 959324953
                       }
                     }
                   ]
@@ -140,7 +140,7 @@
           "function": {
             "contract_fn": {
               "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "dispute",
+              "function_name": "cancel_job",
               "args": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
@@ -157,42 +157,13 @@
     ],
     [],
     [],
-    [
-      [
-        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
-        {
-          "function": {
-            "contract_fn": {
-              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "resolve_dispute",
-              "args": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                },
-                {
-                  "string": "prop-job-1"
-                },
-                {
-                  "bool": false
-                }
-              ]
-            }
-          },
-          "sub_invocations": []
-        }
-      ]
-    ],
-    [],
-    [],
-    [],
-    [],
     [],
     [],
     []
   ],
   "ledger": {
     "protocol_version": 21,
-    "sequence_number": 0,
+    "sequence_number": 1001,
     "timestamp": 0,
     "network_id": "0000000000000000000000000000000000000000000000000000000000000000",
     "base_reserve": 0,
@@ -331,7 +302,7 @@
                               "val": {
                                 "i128": {
                                   "hi": 0,
-                                  "lo": 911167877
+                                  "lo": 959324953
                                 }
                               }
                             },
@@ -348,7 +319,7 @@
                                 "symbol": "dispute_expiry_ledger"
                               },
                               "val": {
-                                "u32": 200
+                                "u32": 0
                               }
                             },
                             {
@@ -417,39 +388,6 @@
             "ext": "v0"
           },
           4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
-            "key": {
-              "ledger_key_nonce": {
-                "nonce": 4270020994084947596
-              }
-            },
-            "durability": "temporary"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
-                "key": {
-                  "ledger_key_nonce": {
-                    "nonce": 4270020994084947596
-                  }
-                },
-                "durability": "temporary",
-                "val": "void"
-              }
-            },
-            "ext": "v0"
-          },
-          6311999
         ]
       ],
       [
@@ -548,7 +486,7 @@
             },
             "ext": "v0"
           },
-          6311999
+          6313000
         ]
       ],
       [
@@ -701,7 +639,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 911167877
+                          "lo": 959324953
                         }
                       }
                     },
@@ -1113,7 +1051,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 911167877
+                    "lo": 959324953
                   }
                 }
               ]
@@ -1147,7 +1085,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 911167877
+                "lo": 959324953
               }
             }
           }
@@ -1211,7 +1149,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 911167877
+                    "lo": 959324953
                   }
                 },
                 {
@@ -1253,7 +1191,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 911167877
+                    "lo": 959324953
                   }
                 }
               ]
@@ -1287,7 +1225,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 911167877
+                "lo": 959324953
               }
             }
           }
@@ -1387,7 +1325,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 911167877
+                      "lo": 959324953
                     }
                   }
                 },
@@ -1438,7 +1376,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 911167877
+                      "lo": 959324953
                     }
                   }
                 },
@@ -1484,7 +1422,7 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "dispute"
+                "symbol": "cancel_job"
               }
             ],
             "data": {
@@ -1494,350 +1432,6 @@
                 },
                 {
                   "string": "prop-job-1"
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "contract",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "disputed"
-              },
-              {
-                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-              }
-            ],
-            "data": {
-              "string": "prop-job-1"
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "dispute"
-              }
-            ],
-            "data": "void"
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
-                "symbol": "get_job"
-              }
-            ],
-            "data": {
-              "string": "prop-job-1"
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "get_job"
-              }
-            ],
-            "data": {
-              "map": [
-                {
-                  "key": {
-                    "symbol": "amount"
-                  },
-                  "val": {
-                    "i128": {
-                      "hi": 0,
-                      "lo": 911167877
-                    }
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "client"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "dispute_expiry_ledger"
-                  },
-                  "val": {
-                    "u32": 200
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "expiry_ledger"
-                  },
-                  "val": {
-                    "u32": 1000
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "freelancer"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "id"
-                  },
-                  "val": {
-                    "string": "prop-job-1"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "remaining_amount"
-                  },
-                  "val": {
-                    "i128": {
-                      "hi": 0,
-                      "lo": 911167877
-                    }
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "status"
-                  },
-                  "val": {
-                    "vec": [
-                      {
-                        "symbol": "Disputed"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "token"
-                  },
-                  "val": {
-                    "address": "CCABDO7UZXYE4W6GVSEGSNNZTKSLFQGKXXQTH6OX7M7GKZ4Z6CUJNGZN"
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
-                "symbol": "get_job"
-              }
-            ],
-            "data": {
-              "string": "prop-job-1"
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "get_job"
-              }
-            ],
-            "data": {
-              "map": [
-                {
-                  "key": {
-                    "symbol": "amount"
-                  },
-                  "val": {
-                    "i128": {
-                      "hi": 0,
-                      "lo": 911167877
-                    }
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "client"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "dispute_expiry_ledger"
-                  },
-                  "val": {
-                    "u32": 200
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "expiry_ledger"
-                  },
-                  "val": {
-                    "u32": 1000
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "freelancer"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "id"
-                  },
-                  "val": {
-                    "string": "prop-job-1"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "remaining_amount"
-                  },
-                  "val": {
-                    "i128": {
-                      "hi": 0,
-                      "lo": 911167877
-                    }
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "status"
-                  },
-                  "val": {
-                    "vec": [
-                      {
-                        "symbol": "Disputed"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "token"
-                  },
-                  "val": {
-                    "address": "CCABDO7UZXYE4W6GVSEGSNNZTKSLFQGKXXQTH6OX7M7GKZ4Z6CUJNGZN"
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
-                "symbol": "resolve_dispute"
-              }
-            ],
-            "data": {
-              "vec": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                },
-                {
-                  "string": "prop-job-1"
-                },
-                {
-                  "bool": false
                 }
               ]
             }
@@ -1875,7 +1469,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 911167877
+                    "lo": 959324953
                   }
                 }
               ]
@@ -1909,7 +1503,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 911167877
+                "lo": 959324953
               }
             }
           }
@@ -1942,36 +1536,6 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "contract",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "resolved"
-              },
-              {
-                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-              }
-            ],
-            "data": {
-              "vec": [
-                {
-                  "string": "prop-job-1"
-                },
-                {
-                  "bool": false
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -1980,7 +1544,7 @@
                 "symbol": "fn_return"
               },
               {
-                "symbol": "resolve_dispute"
+                "symbol": "cancel_job"
               }
             ],
             "data": "void"
@@ -2039,7 +1603,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 911167877
+                      "lo": 959324953
                     }
                   }
                 },
@@ -2056,7 +1620,7 @@
                     "symbol": "dispute_expiry_ledger"
                   },
                   "val": {
-                    "u32": 200
+                    "u32": 0
                   }
                 },
                 {
@@ -2171,7 +1735,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 911167877
+                      "lo": 959324953
                     }
                   }
                 },
@@ -2188,7 +1752,7 @@
                     "symbol": "dispute_expiry_ledger"
                   },
                   "val": {
-                    "u32": 200
+                    "u32": 0
                   }
                 },
                 {
@@ -2303,7 +1867,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 911167877
+                      "lo": 959324953
                     }
                   }
                 },
@@ -2320,7 +1884,7 @@
                     "symbol": "dispute_expiry_ledger"
                   },
                   "val": {
-                    "u32": 200
+                    "u32": 0
                   }
                 },
                 {
@@ -2435,7 +1999,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 911167877
+                      "lo": 959324953
                     }
                   }
                 },
@@ -2452,7 +2016,7 @@
                     "symbol": "dispute_expiry_ledger"
                   },
                   "val": {
-                    "u32": 200
+                    "u32": 0
                   }
                 },
                 {
@@ -2567,7 +2131,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 911167877
+                      "lo": 959324953
                     }
                   }
                 },
@@ -2584,271 +2148,7 @@
                     "symbol": "dispute_expiry_ledger"
                   },
                   "val": {
-                    "u32": 200
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "expiry_ledger"
-                  },
-                  "val": {
-                    "u32": 1000
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "freelancer"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "id"
-                  },
-                  "val": {
-                    "string": "prop-job-1"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "remaining_amount"
-                  },
-                  "val": {
-                    "i128": {
-                      "hi": 0,
-                      "lo": 0
-                    }
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "status"
-                  },
-                  "val": {
-                    "vec": [
-                      {
-                        "symbol": "Refunded"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "token"
-                  },
-                  "val": {
-                    "address": "CCABDO7UZXYE4W6GVSEGSNNZTKSLFQGKXXQTH6OX7M7GKZ4Z6CUJNGZN"
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
-                "symbol": "get_job"
-              }
-            ],
-            "data": {
-              "string": "prop-job-1"
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "get_job"
-              }
-            ],
-            "data": {
-              "map": [
-                {
-                  "key": {
-                    "symbol": "amount"
-                  },
-                  "val": {
-                    "i128": {
-                      "hi": 0,
-                      "lo": 911167877
-                    }
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "client"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "dispute_expiry_ledger"
-                  },
-                  "val": {
-                    "u32": 200
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "expiry_ledger"
-                  },
-                  "val": {
-                    "u32": 1000
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "freelancer"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "id"
-                  },
-                  "val": {
-                    "string": "prop-job-1"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "remaining_amount"
-                  },
-                  "val": {
-                    "i128": {
-                      "hi": 0,
-                      "lo": 0
-                    }
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "status"
-                  },
-                  "val": {
-                    "vec": [
-                      {
-                        "symbol": "Refunded"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "token"
-                  },
-                  "val": {
-                    "address": "CCABDO7UZXYE4W6GVSEGSNNZTKSLFQGKXXQTH6OX7M7GKZ4Z6CUJNGZN"
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
-                "symbol": "get_job"
-              }
-            ],
-            "data": {
-              "string": "prop-job-1"
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "get_job"
-              }
-            ],
-            "data": {
-              "map": [
-                {
-                  "key": {
-                    "symbol": "amount"
-                  },
-                  "val": {
-                    "i128": {
-                      "hi": 0,
-                      "lo": 911167877
-                    }
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "client"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "dispute_expiry_ledger"
-                  },
-                  "val": {
-                    "u32": 200
+                    "u32": 0
                   }
                 },
                 {

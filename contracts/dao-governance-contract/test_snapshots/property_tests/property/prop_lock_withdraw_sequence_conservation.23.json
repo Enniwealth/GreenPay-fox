@@ -41,7 +41,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 300000340
+                    "lo": 1389467902
                   }
                 }
               ]
@@ -66,7 +66,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 300000340
+                    "lo": 52949209
                   }
                 },
                 {
@@ -91,7 +91,7 @@
                     {
                       "i128": {
                         "hi": 0,
-                        "lo": 300000340
+                        "lo": 52949209
                       }
                     }
                   ]
@@ -103,6 +103,7 @@
         }
       ]
     ],
+    [],
     [],
     []
   ],
@@ -221,7 +222,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 300000340
+                          "lo": 52949209
                         }
                       }
                     },
@@ -300,7 +301,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 300000340
+                          "lo": 52949209
                         }
                       }
                     },
@@ -454,7 +455,7 @@
                         "val": {
                           "i128": {
                             "hi": 0,
-                            "lo": 300000340
+                            "lo": 52949209
                           }
                         }
                       }
@@ -578,7 +579,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 300000340
+                          "lo": 52949209
                         }
                       }
                     },
@@ -651,7 +652,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 0
+                          "lo": 1336518693
                         }
                       }
                     },
@@ -1092,7 +1093,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 300000340
+                    "lo": 1389467902
                   }
                 }
               ]
@@ -1126,7 +1127,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 300000340
+                "lo": 1389467902
               }
             }
           }
@@ -1181,7 +1182,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 300000340
+                    "lo": 52949209
                   }
                 },
                 {
@@ -1223,7 +1224,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 300000340
+                    "lo": 52949209
                   }
                 }
               ]
@@ -1257,7 +1258,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 300000340
+                "lo": 52949209
               }
             }
           }
@@ -1306,7 +1307,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 300000340
+                    "lo": 52949209
                   }
                 },
                 {
@@ -1382,7 +1383,59 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 300000340
+                "lo": 52949209
+              }
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "8011bbf4cdf04e5bc6ac886935b99aa4b2c0cabde133f9d7fb3e656799f0a896"
+              },
+              {
+                "symbol": "balance"
+              }
+            ],
+            "data": {
+              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "8011bbf4cdf04e5bc6ac886935b99aa4b2c0cabde133f9d7fb3e656799f0a896",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "balance"
+              }
+            ],
+            "data": {
+              "i128": {
+                "hi": 0,
+                "lo": 52949209
               }
             }
           }
@@ -1405,25 +1458,10 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "lock_tokens"
+                "symbol": "get_total_locked"
               }
             ],
-            "data": {
-              "vec": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                },
-                {
-                  "i128": {
-                    "hi": 0,
-                    "lo": 300000340
-                  }
-                },
-                {
-                  "u32": 120960
-                }
-              ]
-            }
+            "data": "void"
           }
         }
       },
@@ -1438,125 +1476,17 @@
           "v0": {
             "topics": [
               {
-                "symbol": "log"
-              }
-            ],
-            "data": {
-              "vec": [
-                {
-                  "string": "caught panic 'existing lock must be extended or expired' from contract function 'Symbol(obj#383)'"
-                },
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                },
-                {
-                  "i128": {
-                    "hi": 0,
-                    "lo": 300000340
-                  }
-                },
-                {
-                  "u32": 120960
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": true
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "error"
+                "symbol": "fn_return"
               },
               {
-                "error": {
-                  "wasm_vm": "invalid_action"
-                }
+                "symbol": "get_total_locked"
               }
             ],
             "data": {
-              "string": "caught error from function"
-            }
-          }
-        }
-      },
-      "failed_call": true
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "error"
-              },
-              {
-                "error": {
-                  "wasm_vm": "invalid_action"
-                }
+              "i128": {
+                "hi": 0,
+                "lo": 52949209
               }
-            ],
-            "data": {
-              "vec": [
-                {
-                  "string": "contract call failed"
-                },
-                {
-                  "symbol": "lock_tokens"
-                },
-                {
-                  "vec": [
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                    },
-                    {
-                      "i128": {
-                        "hi": 0,
-                        "lo": 300000340
-                      }
-                    },
-                    {
-                      "u32": 120960
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "error"
-              },
-              {
-                "error": {
-                  "wasm_vm": "invalid_action"
-                }
-              }
-            ],
-            "data": {
-              "string": "escalating error to panic"
             }
           }
         }

@@ -92,7 +92,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 48755785
+                    "lo": 18559976
                   }
                 }
               ]
@@ -123,7 +123,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 48755785
+                    "lo": 18559976
                   }
                 },
                 {
@@ -148,7 +148,7 @@
                     {
                       "i128": {
                         "hi": 0,
-                        "lo": 48755785
+                        "lo": 18559976
                       }
                     }
                   ]
@@ -176,7 +176,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 45033792
+                    "lo": 32923480
                   }
                 }
               ]
@@ -207,7 +207,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 45033792
+                    "lo": 32923480
                   }
                 },
                 {
@@ -232,7 +232,7 @@
                     {
                       "i128": {
                         "hi": 0,
-                        "lo": 45033792
+                        "lo": 32923480
                       }
                     }
                   ]
@@ -260,7 +260,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 38103767
+                    "lo": 33220574
                   }
                 }
               ]
@@ -291,7 +291,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 38103767
+                    "lo": 33220574
                   }
                 },
                 {
@@ -316,7 +316,91 @@
                     {
                       "i128": {
                         "hi": 0,
-                        "lo": 38103767
+                        "lo": 33220574
+                      }
+                    }
+                  ]
+                }
+              },
+              "sub_invocations": []
+            }
+          ]
+        }
+      ]
+    ],
+    [],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CDLDVFKHEZ2RVB3NG4UQA4VPD3TSHV6XMHXMHP2BSGCJ2IIWVTOHGDSG",
+              "function_name": "mint",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 18338386
+                  }
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "function_name": "donate",
+              "args": [
+                {
+                  "address": "CDLDVFKHEZ2RVB3NG4UQA4VPD3TSHV6XMHXMHP2BSGCJ2IIWVTOHGDSG"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                },
+                {
+                  "string": "badge-prop-proj"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 18338386
+                  }
+                },
+                {
+                  "u32": 0
+                }
+              ]
+            }
+          },
+          "sub_invocations": [
+            {
+              "function": {
+                "contract_fn": {
+                  "contract_address": "CDLDVFKHEZ2RVB3NG4UQA4VPD3TSHV6XMHXMHP2BSGCJ2IIWVTOHGDSG",
+                  "function_name": "transfer",
+                  "args": [
+                    {
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                    },
+                    {
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                    },
+                    {
+                      "i128": {
+                        "hi": 0,
+                        "lo": 18338386
                       }
                     }
                   ]
@@ -458,7 +542,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 93500
+                          "lo": 68000
                         }
                       }
                     },
@@ -467,7 +551,7 @@
                         "symbol": "donation_count"
                       },
                       "val": {
-                        "u32": 3
+                        "u32": 4
                       }
                     },
                     {
@@ -477,7 +561,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 131893344
+                          "lo": 103042416
                         }
                       }
                     }
@@ -627,7 +711,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 131893344
+                          "lo": 103042416
                         }
                       }
                     }
@@ -712,7 +796,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 131893344
+                          "lo": 103042416
                         }
                       }
                     }
@@ -866,7 +950,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 131893344
+                          "lo": 103042416
                         }
                       }
                     },
@@ -946,7 +1030,7 @@
                           ]
                         },
                         "val": {
-                          "u32": 3
+                          "u32": 4
                         }
                       },
                       {
@@ -960,7 +1044,7 @@
                         "val": {
                           "i128": {
                             "hi": 0,
-                            "lo": 93500
+                            "lo": 68000
                           }
                         }
                       },
@@ -975,7 +1059,7 @@
                         "val": {
                           "i128": {
                             "hi": 0,
-                            "lo": 131893344
+                            "lo": 103042416
                           }
                         }
                       },
@@ -1085,6 +1169,39 @@
             "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4",
             "key": {
               "ledger_key_nonce": {
+                "nonce": 1194852393571756375
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 1194852393571756375
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          6311999
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4",
+            "key": {
+              "ledger_key_nonce": {
                 "nonce": 4270020994084947596
               }
             },
@@ -1167,6 +1284,39 @@
                 "key": {
                   "ledger_key_nonce": {
                     "nonce": 6277191135259896685
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          6311999
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4",
+            "key": {
+              "ledger_key_nonce": {
+                "nonce": 115220454072064130
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 115220454072064130
                   }
                 },
                 "durability": "temporary",
@@ -1321,7 +1471,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 131893344
+                          "lo": 103042416
                         }
                       }
                     },
@@ -1892,7 +2042,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 48755785
+                    "lo": 18559976
                   }
                 }
               ]
@@ -1926,7 +2076,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 48755785
+                "lo": 18559976
               }
             }
           }
@@ -1987,7 +2137,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 48755785
+                    "lo": 18559976
                   }
                 },
                 {
@@ -2029,7 +2179,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 48755785
+                    "lo": 18559976
                   }
                 }
               ]
@@ -2063,7 +2213,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 48755785
+                "lo": 18559976
               }
             }
           }
@@ -2115,7 +2265,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 48755785
+                    "lo": 18559976
                   }
                 },
                 {
@@ -2235,7 +2385,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 45033792
+                    "lo": 32923480
                   }
                 }
               ]
@@ -2269,7 +2419,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 45033792
+                "lo": 32923480
               }
             }
           }
@@ -2330,7 +2480,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 45033792
+                    "lo": 32923480
                   }
                 },
                 {
@@ -2372,7 +2522,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 45033792
+                    "lo": 32923480
                   }
                 }
               ]
@@ -2406,7 +2556,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 45033792
+                "lo": 32923480
               }
             }
           }
@@ -2458,7 +2608,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 45033792
+                    "lo": 32923480
                   }
                 },
                 {
@@ -2578,7 +2728,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 38103767
+                    "lo": 33220574
                   }
                 }
               ]
@@ -2612,7 +2762,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 38103767
+                "lo": 33220574
               }
             }
           }
@@ -2673,7 +2823,350 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 38103767
+                    "lo": 33220574
+                  }
+                },
+                {
+                  "u32": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "d63a954726751a876d37290072af1ee723d7d761eec3bf4191849d2116acdc73"
+              },
+              {
+                "symbol": "transfer"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 33220574
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "d63a954726751a876d37290072af1ee723d7d761eec3bf4191849d2116acdc73",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "transfer"
+              },
+              {
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+              },
+              {
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+              },
+              {
+                "string": "aaa:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL7NV"
+              }
+            ],
+            "data": {
+              "i128": {
+                "hi": 0,
+                "lo": 33220574
+              }
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "d63a954726751a876d37290072af1ee723d7d761eec3bf4191849d2116acdc73",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "transfer"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "donated"
+              },
+              {
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+              },
+              {
+                "string": "badge-prop-proj"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 33220574
+                  }
+                },
+                {
+                  "vec": [
+                    {
+                      "symbol": "None"
+                    }
+                  ]
+                },
+                {
+                  "u32": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "donate"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "get_badge"
+              }
+            ],
+            "data": {
+              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "get_badge"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "symbol": "None"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "d63a954726751a876d37290072af1ee723d7d761eec3bf4191849d2116acdc73"
+              },
+              {
+                "symbol": "mint"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 18338386
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "d63a954726751a876d37290072af1ee723d7d761eec3bf4191849d2116acdc73",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mint"
+              },
+              {
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4"
+              },
+              {
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+              },
+              {
+                "string": "aaa:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL7NV"
+              }
+            ],
+            "data": {
+              "i128": {
+                "hi": 0,
+                "lo": 18338386
+              }
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "d63a954726751a876d37290072af1ee723d7d761eec3bf4191849d2116acdc73",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "mint"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "donate"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "address": "CDLDVFKHEZ2RVB3NG4UQA4VPD3TSHV6XMHXMHP2BSGCJ2IIWVTOHGDSG"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                },
+                {
+                  "string": "badge-prop-proj"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 18338386
                   }
                 },
                 {
@@ -2742,7 +3235,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 38103767
+                    "lo": 18338386
                   }
                 }
               ]
@@ -2776,7 +3269,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 38103767
+                "lo": 18338386
               }
             }
           }
@@ -2828,7 +3321,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 38103767
+                    "lo": 18338386
                   }
                 },
                 {
@@ -2984,7 +3477,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 93500
+                      "lo": 68000
                     }
                   }
                 },
@@ -2993,7 +3486,7 @@
                     "symbol": "donation_count"
                   },
                   "val": {
-                    "u32": 3
+                    "u32": 4
                   }
                 },
                 {
@@ -3003,7 +3496,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 131893344
+                      "lo": 103042416
                     }
                   }
                 }

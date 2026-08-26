@@ -281,7 +281,7 @@ describe("project search integration", () => {
       const { meta } = await searchProjects(pool, { search: "conservation", limit: 20 }, DEFAULT_RANKING);
       expect(meta.latencyMs).toBeLessThan(SEARCH_LATENCY_BUDGET_MS);
     } finally {
-      await pool.query(`DELETE FROM projects WHERE tags @> ARRAY['bulk']::text[]`);
+      await pool.query("DELETE FROM projects WHERE tags @> ARRAY['bulk']::text[]");
     }
   });
 

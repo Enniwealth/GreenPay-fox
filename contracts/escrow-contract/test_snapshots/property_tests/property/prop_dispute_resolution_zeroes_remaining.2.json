@@ -61,7 +61,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 151077581
+                    "lo": 171082116
                   }
                 }
               ]
@@ -95,7 +95,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 151077581
+                    "lo": 171082116
                   }
                 },
                 {
@@ -120,7 +120,7 @@
                     {
                       "i128": {
                         "hi": 0,
-                        "lo": 151077581
+                        "lo": 171082116
                       }
                     }
                   ]
@@ -170,7 +170,7 @@
                   "string": "prop-job-1"
                 },
                 {
-                  "bool": false
+                  "bool": true
                 }
               ]
             }
@@ -322,7 +322,7 @@
                               "val": {
                                 "i128": {
                                   "hi": 0,
-                                  "lo": 151077581
+                                  "lo": 171082116
                                 }
                               }
                             },
@@ -384,7 +384,7 @@
                               "val": {
                                 "vec": [
                                   {
-                                    "symbol": "Refunded"
+                                    "symbol": "Released"
                                   }
                                 ]
                               }
@@ -692,7 +692,80 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 151077581
+                          "lo": 0
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "authorized"
+                      },
+                      "val": {
+                        "bool": true
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "clawback"
+                      },
+                      "val": {
+                        "bool": false
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          518400
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CCABDO7UZXYE4W6GVSEGSNNZTKSLFQGKXXQTH6OX7M7GKZ4Z6CUJNGZN",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "Balance"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CCABDO7UZXYE4W6GVSEGSNNZTKSLFQGKXXQTH6OX7M7GKZ4Z6CUJNGZN",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "Balance"
+                    },
+                    {
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "amount"
+                      },
+                      "val": {
+                        "i128": {
+                          "hi": 0,
+                          "lo": 171082116
                         }
                       }
                     },
@@ -1104,7 +1177,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 151077581
+                    "lo": 171082116
                   }
                 }
               ]
@@ -1138,7 +1211,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 151077581
+                "lo": 171082116
               }
             }
           }
@@ -1202,7 +1275,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 151077581
+                    "lo": 171082116
                   }
                 },
                 {
@@ -1244,7 +1317,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 151077581
+                    "lo": 171082116
                   }
                 }
               ]
@@ -1278,7 +1351,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 151077581
+                "lo": 171082116
               }
             }
           }
@@ -1432,7 +1505,7 @@
                   "string": "prop-job-1"
                 },
                 {
-                  "bool": false
+                  "bool": true
                 }
               ]
             }
@@ -1465,12 +1538,12 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
                 },
                 {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
                 },
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 151077581
+                    "lo": 171082116
                   }
                 }
               ]
@@ -1495,7 +1568,7 @@
                 "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
               },
               {
-                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
               },
               {
                 "string": "aaa:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJXFF"
@@ -1504,7 +1577,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 151077581
+                "lo": 171082116
               }
             }
           }
@@ -1554,7 +1627,7 @@
                   "string": "prop-job-1"
                 },
                 {
-                  "bool": false
+                  "bool": true
                 }
               ]
             }
@@ -1634,7 +1707,7 @@
                   "val": {
                     "i128": {
                       "hi": 0,
-                      "lo": 151077581
+                      "lo": 171082116
                     }
                   }
                 },
@@ -1696,7 +1769,7 @@
                   "val": {
                     "vec": [
                       {
-                        "symbol": "Refunded"
+                        "symbol": "Released"
                       }
                     ]
                   }

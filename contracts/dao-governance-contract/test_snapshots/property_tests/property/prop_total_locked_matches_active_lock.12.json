@@ -4,6 +4,7 @@
     "nonce": 0
   },
   "auth": [
+    [],
     [
       [
         "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJXFF",
@@ -24,6 +25,7 @@
       ]
     ],
     [],
+    [],
     [
       [
         "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
@@ -39,7 +41,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 100425164
+                    "lo": 1954800937
                   }
                 }
               ]
@@ -64,7 +66,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 100425164
+                    "lo": 487501883
                   }
                 },
                 {
@@ -89,7 +91,7 @@
                     {
                       "i128": {
                         "hi": 0,
-                        "lo": 100425164
+                        "lo": 487501883
                       }
                     }
                   ]
@@ -102,6 +104,25 @@
       ]
     ],
     [],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "function_name": "withdraw",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
     []
   ],
   "ledger": {
@@ -182,79 +203,6 @@
             "key": {
               "vec": [
                 {
-                  "symbol": "Lock"
-                },
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "Lock"
-                    },
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "map": [
-                    {
-                      "key": {
-                        "symbol": "amount"
-                      },
-                      "val": {
-                        "i128": {
-                          "hi": 0,
-                          "lo": 100425164
-                        }
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "created_ledger"
-                      },
-                      "val": {
-                        "u32": 0
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "unlock_ledger"
-                      },
-                      "val": {
-                        "u32": 120960
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          2102400
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
                   "symbol": "LockCheckpoint"
                 },
                 {
@@ -298,7 +246,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 100425164
+                          "lo": 487501883
                         }
                       }
                     },
@@ -452,7 +400,7 @@
                         "val": {
                           "i128": {
                             "hi": 0,
-                            "lo": 100425164
+                            "lo": 0
                           }
                         }
                       }
@@ -463,7 +411,7 @@
             },
             "ext": "v0"
           },
-          2102400
+          1000000
         ]
       ],
       [
@@ -535,6 +483,39 @@
       [
         {
           "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM",
+            "key": {
+              "ledger_key_nonce": {
+                "nonce": 4837995959683129791
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 4837995959683129791
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          6432960
+        ]
+      ],
+      [
+        {
+          "contract_data": {
             "contract": "CCABDO7UZXYE4W6GVSEGSNNZTKSLFQGKXXQTH6OX7M7GKZ4Z6CUJNGZN",
             "key": {
               "vec": [
@@ -576,7 +557,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 100425164
+                          "lo": 0
                         }
                       }
                     },
@@ -602,7 +583,7 @@
             },
             "ext": "v0"
           },
-          518400
+          639361
         ]
       ],
       [
@@ -649,7 +630,7 @@
                       "val": {
                         "i128": {
                           "hi": 0,
-                          "lo": 0
+                          "lo": 1954800937
                         }
                       }
                     },
@@ -675,7 +656,7 @@
             },
             "ext": "v0"
           },
-          518400
+          639361
         ]
       ],
       [
@@ -787,7 +768,7 @@
             },
             "ext": "v0"
           },
-          120960
+          1000000
         ]
       ],
       [
@@ -808,7 +789,7 @@
             },
             "ext": "v0"
           },
-          2102400
+          1000000
         ]
       ]
     ]
@@ -1090,7 +1071,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 100425164
+                    "lo": 1954800937
                   }
                 }
               ]
@@ -1124,7 +1105,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 100425164
+                "lo": 1954800937
               }
             }
           }
@@ -1179,7 +1160,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 100425164
+                    "lo": 487501883
                   }
                 },
                 {
@@ -1221,7 +1202,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 100425164
+                    "lo": 487501883
                   }
                 }
               ]
@@ -1255,7 +1236,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 100425164
+                "lo": 487501883
               }
             }
           }
@@ -1304,7 +1285,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 100425164
+                    "lo": 487501883
                   }
                 },
                 {
@@ -1380,7 +1361,7 @@
             "data": {
               "i128": {
                 "hi": 0,
-                "lo": 100425164
+                "lo": 487501883
               }
             }
           }
@@ -1443,7 +1424,7 @@
                 {
                   "i128": {
                     "hi": 0,
-                    "lo": 100425164
+                    "lo": 487501883
                   }
                 }
               ]
@@ -1451,7 +1432,86 @@
           }
         }
       },
-      "failed_call": true
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "8011bbf4cdf04e5bc6ac886935b99aa4b2c0cabde133f9d7fb3e656799f0a896",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "transfer"
+              },
+              {
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
+              },
+              {
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+              },
+              {
+                "string": "aaa:GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJXFF"
+              }
+            ],
+            "data": {
+              "i128": {
+                "hi": 0,
+                "lo": 487501883
+              }
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "8011bbf4cdf04e5bc6ac886935b99aa4b2c0cabde133f9d7fb3e656799f0a896",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "transfer"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "withdrw"
+              },
+              {
+                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+              }
+            ],
+            "data": {
+              "i128": {
+                "hi": 0,
+                "lo": 487501883
+              }
+            }
+          }
+        }
+      },
+      "failed_call": false
     },
     {
       "event": {
@@ -1462,161 +1522,13 @@
           "v0": {
             "topics": [
               {
-                "symbol": "error"
+                "symbol": "fn_return"
               },
               {
-                "error": {
-                  "storage": "internal_error"
-                }
+                "symbol": "withdraw"
               }
             ],
-            "data": {
-              "vec": [
-                {
-                  "string": "[testing-only] Accessed contract instance key that has been archived. Important: this error may only appear in tests; in the real network contracts aren't called at all if any archived entry is accessed."
-                },
-                {
-                  "address": "CCABDO7UZXYE4W6GVSEGSNNZTKSLFQGKXXQTH6OX7M7GKZ4Z6CUJNGZN"
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": true
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "error"
-              },
-              {
-                "error": {
-                  "storage": "internal_error"
-                }
-              }
-            ],
-            "data": {
-              "vec": [
-                {
-                  "string": "contract call failed"
-                },
-                {
-                  "symbol": "transfer"
-                },
-                {
-                  "vec": [
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
-                    },
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                    },
-                    {
-                      "i128": {
-                        "hi": 0,
-                        "lo": 100425164
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": true
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "error"
-              },
-              {
-                "error": {
-                  "storage": "internal_error"
-                }
-              }
-            ],
-            "data": {
-              "string": "escalating error to panic"
-            }
-          }
-        }
-      },
-      "failed_call": true
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "error"
-              },
-              {
-                "error": {
-                  "storage": "internal_error"
-                }
-              }
-            ],
-            "data": {
-              "string": "caught error from function"
-            }
-          }
-        }
-      },
-      "failed_call": true
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "error"
-              },
-              {
-                "error": {
-                  "storage": "internal_error"
-                }
-              }
-            ],
-            "data": {
-              "vec": [
-                {
-                  "string": "contract call failed"
-                },
-                {
-                  "symbol": "withdraw"
-                },
-                {
-                  "vec": [
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
-                    }
-                  ]
-                }
-              ]
-            }
+            "data": "void"
           }
         }
       },
@@ -1631,16 +1543,41 @@
           "v0": {
             "topics": [
               {
-                "symbol": "error"
+                "symbol": "fn_call"
               },
               {
-                "error": {
-                  "storage": "internal_error"
-                }
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "get_total_locked"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "get_total_locked"
               }
             ],
             "data": {
-              "string": "escalating error to panic"
+              "i128": {
+                "hi": 0,
+                "lo": 0
+              }
             }
           }
         }
